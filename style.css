@@ -1,0 +1,91 @@
+/* Estilos generales del cuerpo */
+body {
+  margin: 0;
+  padding: 0 10px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #87eb9e;
+}
+
+/* Logos fijos en las esquinas */
+#logo-izquierdo, #logo-derecho {
+  position: fixed;
+  top: 10px;
+  width: 150px;
+  z-index: 9999;
+}
+
+#logo-izquierdo {
+  left: 10px;
+}
+
+#logo-derecho {
+  right: 10px;
+}
+
+/* Contenedor de todos los videos: doble columna */
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 40px 20px;
+  justify-items: center;
+}
+
+/* Cada clase individual */
+.clase {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado de cada clase */
+.clase h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Iframe de video */
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón de WhatsApp */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  #logo-izquierdo, #logo-derecho {
+    width: 80px;
+  }
+
+  .clase h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 16px;
+    width: 90%;
+  }
+}
