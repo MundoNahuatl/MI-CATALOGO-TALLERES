@@ -11,16 +11,16 @@ body {
 #logo-izquierdo, #logo-derecho {
   position: fixed;
   top: 10px;
-  width: 150px;
+  width: 100px;
   z-index: 9999;
 }
 
 #logo-izquierdo {
-  left: 08px;
+  left: 10px;
 }
 
 #logo-derecho {
-  right: 08px;
+  right: 10px;
 }
 
 /* Contenedor de todos los videos: doble columna */
