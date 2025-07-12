@@ -11,7 +11,7 @@ body {
 #logo-izquierdo, #logo-derecho {
   position: fixed;
   top: 10px;
-  width: 60px;
+  width: 100px;
   z-index: 9999;
 }
 
