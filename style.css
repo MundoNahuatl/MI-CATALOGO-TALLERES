@@ -7,8 +7,15 @@ body {
   background-color: #87eb9e;
 }
 
-/* Logos fijos en las esquinas */
-#logo-izquierdo, #logo-derecho {
+/* Encabezado principal con espacio para los logos */
+h1 {
+  margin-top: 120px;
+  font-size: 2rem;
+}
+
+/* Logos fijos en escritorio */
+#logo-izquierdo,
+#logo-derecho {
   position: fixed;
   top: 10px;
   width: 100px;
@@ -72,12 +79,23 @@ button {
 
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 600px) {
-  h1, h2, h3 {
+  h1 {
+    margin-top: 20px;
     font-size: 1.5rem;
   }
 
-  #logo-izquierdo, #logo-derecho {
-    width: 80px;
+  /* Contenedor centrado de logos */
+  .logos-superiores {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #logo-izquierdo,
+  #logo-derecho {
+    position: static;
+    display: inline-block;
+    width: 60px; /* Logos más pequeños */
+    margin: 0 8px;
   }
 
   .clase h2 {
